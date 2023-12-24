@@ -1,3 +1,4 @@
+import "./Form.css";
 import { useState } from "react";
 
 export default function Form() {
@@ -21,7 +22,7 @@ export default function Form() {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form className="form" onSubmit={handleSubmit}>
       <label htmlFor="title">Title</label>
       <input
         type="text"
