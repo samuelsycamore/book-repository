@@ -16,7 +16,10 @@ function Collection() {
   return (
     <ul>
       {collection.map((book) => (
-        <li key={book.title}>{book.title}</li>
+        <li key={book.id}>
+          <i>{book.title}</i> by {book.author}. Read in {book.year}. Notes:{" "}
+          {book.notes}
+        </li>
       ))}
     </ul>
   );
